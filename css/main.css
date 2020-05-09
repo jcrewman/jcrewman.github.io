@@ -69,6 +69,8 @@ body, p, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd {
   font-weight: 500;
   word-spacing: 5px;
   color: #424242 !important; }
+.site-title > a {
+  color: #424242 !important; }
 
 /**
  * Site nav for large real estate
