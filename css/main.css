@@ -1,0 +1,209 @@
+/**
+ * Body fonts
+ */
+body {
+  font-family: normal -apple-system, "adobe-garamond-pro", "eb-garamond", "EB Garamond", Garamond, Hoefler, "Times New Roman", serif;
+  font-size: 16px;
+  font-variant-numeric: oldstyle-nums;
+  font-feature-settings: "swsh";
+  line-height: 1.5;
+  font-weight: 300;
+  background-color: white; }
+
+.smallcaps {
+  font-variant-numeric: oldstyle-nums;
+  font-variant: small-caps; }
+
+/**
+ * Links
+ */
+a {
+  text-decoration: none; }
+  a:visited {
+    color: #424242; }
+  a:hover {
+    background-color: #3fcaff; }
+
+/**
+ * Clearfix to fix wrapping
+ */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/**
+ * Remove margin, padding from all elements
+ */
+body, p, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Wrapper to set padding around page
+ */
+.wrapper {
+  max-width: calc(800px - 30px * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+  /* Mobile */
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: calc(800px - 30px);
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+/**
+ * Site header, consisting of title and nav
+ */
+.site-header {
+  letter-spacing: 3px;
+  min-height: 70px;
+  padding-top: 55px; }	
+
+.site-title {
+  font-size: 32px;
+  font-weight: 500;
+  word-spacing: 5px;
+  color: #424242 !important; }
+
+/**
+ * Site nav for large real estate
+ */
+.site-nav {
+  float: right;
+  font-size: 20px; }
+  .site-nav .site-nav-icon {
+    /* Hide hamburger icon */
+    display: none; }
+  .site-nav .page-link {
+    color: #424242;
+    line-height: 1.6; }
+    .site-nav .page-link:not(:first-child) {
+      /* Extra padding for non-first elements */
+      margin-left: 20px; }
+
+/** Site nav for small real estate
+ */
+  @media screen and (max-width: 600px) {
+    .site-nav {
+
+      /* Bounding box */
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      background-color: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 5px;
+      text-align: right; }
+
+      /* Hamburger icon's outline, view box 0 0 18 16, svg canvas/doc set to same size */
+      .site-nav .site-nav-icon {
+        /* Display hamburger icon */
+        display: block;
+        /* Float items right of its container */
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 13px;
+        text-align: center; }
+        .site-nav .site-nav-icon > svg {
+          width: 18px;
+          height: 16px; }
+      .site-nav .trigger {
+        /* Do not allow floating elements on the left or the right side */
+        clear: both;
+        /* Hide menu */
+        display: none; }
+      .site-nav:hover .trigger {
+        /* Display menu */
+        display: block; }
+      .site-nav .page-link {
+        display: block;
+        padding: 5px 10px 5px 20px; }
+        .site-nav .page-link:not(:first-child) {
+          margin-left: 0px; } }
+
+/**
+ * Page content
+ */
+.page-header {
+  font-size: 28px;
+  font-weight: 500; }
+
+.page-content {
+  padding: 30px 0;
+  font-size: 24px;
+  font-weight: 400; }
+  .page-content > p {
+  margin-bottom: 1em; }
+
+
+/**
+ * List of Posts, ul
+ */
+.post-list {
+  margin-left: 0;
+  font-size: 18px;
+  list-style: none; }
+ .post-list a {
+   /* For all children (not just direct children of ul '>') */
+   color: #a24242; }
+ .post-list > li {
+   display: flex;
+   flex-direction: column;
+   margin: 0px 0px 10px 0px; }
+ .post-list .post-year {
+   color: #868686; }
+ .post-list .post-press {
+   display:inline-block;
+   margin: -10px 0px 10px 0px; } 
+  .post-press > a {
+    color: #000; } 
+/* removed
+ .post-list .post-venue {
+   text-transform: lowercase;
+   font-variant: small-caps;
+   font-weight: 600; }
+*/
+
+   /* Create flex container for elements in one row */
+/* removed
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between; }
+*/
+
+/**
+ * Footer
+ */
+.footer {
+  color: #868686;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center; }
+
+/**
+ * Create CSS3 flex layout for body only
+ */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.wrapper{
+  /* Give body wrapper 1x of the space */
+  flex: 1; }
+
+/**
+ * Create CSS3 flex layout for header
+ */
+.site-header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between; }
