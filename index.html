@@ -19,6 +19,12 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="canonical" href="https://jamy.ca/">
   <link rel="stylesheet" href="https://use.typekit.net/nvg7exl.css">
+
+<script type="text/javascript">
+  window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+  heap.load("1286262948");
+</script>
+
 </head>
 
 <header>
@@ -76,7 +82,20 @@
 
 </body>
 
-<div class="footer">© 2020 ~ jamy.ca ~ <span style="font-variant: small-caps">html5, css3</span>
+<div class="footer">© 2020 ~ jamy.ca ~ <span style="font-variant: small-caps">html5, css3</span> ~ <script language="javascript"> 
+months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+var d=new Date();
+
+var d = new Date();
+(d.getFullYear());
+
+
+var theDate = new Date(document.lastModified); 
+theDate.setTime((theDate.getTime()+(60*60)) ) 
+with (theDate) { 
+document.write("Last update "+' '+getDate()+' '+months[getMonth()]+' '+d.getFullYear()) 
+} 
+</script>
 </div>
 
 </html>
