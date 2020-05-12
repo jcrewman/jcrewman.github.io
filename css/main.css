@@ -1,7 +1,7 @@
 /**
  * Body fonts
  */
-body {
+body, pre {
   font-family: normal -apple-system, "adobe-garamond-pro", "eb-garamond", "EB Garamond", Garamond, Hoefler, "Times New Roman", serif;
   font-size: 16px;
   font-variant-numeric: oldstyle-nums;
@@ -9,6 +9,14 @@ body {
   line-height: 1.5;
   font-weight: 300;
   background-color: white; }
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
 
 .smallcaps {
   font-variant-numeric: oldstyle-nums;
