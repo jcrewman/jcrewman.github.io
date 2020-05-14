@@ -18,6 +18,7 @@ body {
  * Links
  */
 a {
+  color: #a24242;
   text-decoration: none; }
   a:visited {
     color: #424242; }
