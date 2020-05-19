@@ -19,6 +19,7 @@ pre {
 }
 
 .smallcaps {
+  text-transform: lowercase;
   font-variant-numeric: oldstyle-nums;
   font-variant: small-caps; }
 
@@ -140,6 +141,22 @@ body, p, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd {
           margin-left: 0px; } }
 
 /**
+ * Language toggle
+ */
+.taal-header {
+  float: left;
+  background-color: #a24242;
+  color: #fff !important;
+  text-transform: lowercase;
+  font-variant-numeric: oldstyle-nums;
+  font-variant: small-caps; 
+  padding: 0.5em;
+  margin-top: 8px;
+  transform: rotate(7deg);
+  border-radius: 7px; }
+
+
+/**
  * Page content
  */
 .page-header {
@@ -147,6 +164,7 @@ body, p, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd {
   font-weight: 500; }
 
 .page-content {
+  clear: both;
   padding: 30px 0;
   font-size: 24px;
   font-weight: 400; }
